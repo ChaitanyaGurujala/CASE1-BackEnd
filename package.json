@@ -17,11 +17,12 @@
     "@sap/cds-dk": "^8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "deploy": "cf deploy mta_archives/case1be_1.0.0.mtar --retries 1"
   },
   "cds": {
     "requires": {
-      "auth": "xsuaa"
+      "auth": "mocked"
     }
   }
 }
